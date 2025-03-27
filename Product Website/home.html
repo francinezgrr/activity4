@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <title>Sunnies Studio</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left Navigation Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item px-2 py-2">
+                    <a href="#shades" class="nav-link text-dark">Shades</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a href="#optical" class="nav-link text-dark">Optical</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a href="#accessories" class="nav-link text-dark">Accessories</a>
+                </li>
+            </ul>
+
+            <!-- Centered Logo -->
+            <a href="home.html" class="navbar-brand mx-auto">
+                <img src="Images/Logo.webp" alt="Site Icon" />
+            </a>
+
+            <!-- Right Navigation and Icons -->
+            <div class="nav-btns d-flex align-items-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link text-dark">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#about-us" class="nav-link text-dark">About Us</a>
+                    </li>
+                </ul>
+                <button class="btn " type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+                <button class="btn " type="button">
+                    <i class="fa fa-shopping-bag"></i>
+                </button>
+                <button class="btn" type="button">
+                    <i class="fa fa-user"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Image Slide -->
+            <div class="carousel-item active" style="background-image: url(Images/Carousel\ Banner/2.jpg);">
+                <div class="carousel-caption">
+                    <h2>NEW ARRIVALS</h2>
+                    <button class="btn btn-light">SHOP NOW</button>
+                </div>
+            </div>
+
+            <!-- Video Slide -->
+            <div class="carousel-item">
+                <video autoplay loop muted>
+                    <source src="Images/Carousel Banner/1.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-caption">
+                    <h2>WATCH OUR COLLECTION</h2>
+                    <button class="btn btn-light">EXPLORE</button>
+                </div>
+            </div>
+
+            <!-- Another Image Slide -->
+            <div class="carousel-item" style="background-image: url('Images/Carousel\ Banner/3.jpg');">
+                <div class="carousel-caption">
+                    <h2>LIMITED EDITION</h2>
+                    <button class="btn btn-light">DISCOVER</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Shades -->
+    <section id="shades" class="py-5">
+        <div class="container">
+            <div class="title">
+                <h2 class=" d-inline-block">Shades</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="shades-list row mt-4 gx-0 gy-3">
+                    <div class="row gx-3">
+                        <div class="col-md-3 col-sm-6 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/1.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Fran</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Rose Taupe</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/2.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Gatsby</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Rose Taupe</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/3.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Spencer</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Rose Taupe</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/4.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Gatsby</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Jellyfish</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-md-3 col-sm-6 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/5.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Fran</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Rose Taupe</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/6.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Gatsby</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Rose Taupe</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/7.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Spencer</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Rose Taupe</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 p-2">
+                            <div class="product-card">
+                                <img src="Images/Shades/8.jpg" class="product-image" />
+                                <div class="product-info text-center">
+                                    <p class="product-name">Gatsby</p>
+                                    <span class="product-price">P995</span>
+                                    <p class="product-description">Jellyfish</p>
+                                    <a class="product-link product-category" href="">Add to bag</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optical -->
+    <section id="optical" class="py-5">
+        <div class="container">
+            <div class="title py-5">
+                <h2 class=" d-inline-block">Optical</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/1o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 1</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/2o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 2</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/3o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 3</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/4o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 4</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/5o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 5</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/6o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 6</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/7o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 7</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Optical/8o.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Optical 8</p>
+                            <span class="product-price">P1495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories -->
+    <section id="accessories" class="py-5">
+        <div class="container">
+            <div class="title py-5">
+                <h2 class=" d-inline-block">Accessories</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Accessories/17.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Accessories 1</p>
+                            <span class="product-price">P495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Accessories/18.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Accessories 2</p>
+                            <span class="product-price">P495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Accessories/19.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Accessories 3</p>
+                            <span class="product-price">P495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="product-card">
+                        <img src="Images/Accessories/20.png" class="product-image" />
+                        <div class="product-info text-center">
+                            <p class="product-name">Accessories 4</p>
+                            <span class="product-price">P495</span>
+                            <p class="product-description">Jellyfish</p>
+                            <a class="product-link product-category" href="">Add to bag</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us -->
+    <section id="about-us" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-1 order-lg-1">
+                    <div class="title pt-3 pb-5">
+                        <h2 class=" d-inline-block">About Us</h2>
+                    </div>
+                    <p class="lead text-muted">
+                        A virtual space where customers can collect items before checkout.
+                    </p>
+                    <p>
+                        The system that handles order fulfillment, including payment verification, inventory management, and shipping arrangements.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 order-lg-0 p-5">
+                    <img src="Images/1716970846_0_2048x.webp" alt="about-us-imag" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                    <h5 class="fw-bold">Eyewear you live in</h5>
+                    <p>See clearly and confidently with products and services you’ll enjoy at a fair price without compromising quality.</p>
+                    <a href="#" class="feature-link">Our Story</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fa fa-leaf"></i>
+                    </div>
+                    <h5 class="fw-bold">Feel good, look good</h5>
+                    <p>We’re shifting materials to reduce plastic waste and carbon emissions while still producing the same quality frames you’ll love.</p>
+                    <a href="#" class="feature-link">Our Materials</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fa fa-recycle"></i>
+                    </div>
+                    <h5 class="fw-bold">90-day Guarantee</h5>
+                    <p>Happy with your purchase? If not, you’re welcome to change your Sunnies Studios product within 90 days of purchase.</p>
+                    <a href="#" class="feature-link">Our Guarantee</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section id="subscribe" class="py-5">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center flex-column">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class=" d-inline-block ms-4">
+                        Subscription
+                    </h2>
+                </div>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Email" />
+                    <button class="sub-btn" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Subscription Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Good stuff, straight to your inbox.</h5>
+                    <p>10% off your first eyewear purchase</p>
+                    <form>
+                        <input type="email" class="form-control mb-2 bg-secondary text-light border-0" placeholder="Your email">
+                        <input type="date" class="form-control mb-2 bg-secondary text-light border-0" placeholder="Birthday">
+                        <button class="btn btn-light w-100">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Info Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Info</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Our Story</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Eyewear Guide</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Sunnies Club</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Sunnies Guarantee</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Stores</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Section -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Social</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Pinterest</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">TikTok</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="text-center mt-4">
+                <img src="Images/Logo.webp" alt="Brand Logo" class="mb-3" style="width: 250px;">
+                <p class="mb-0">&copy; 2023, Sunnies Studios</p>
+                <p>
+                    <a href="#" class="text-light text-decoration-none">Terms & Conditions</a> |
+                    <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ---- JQuery JS ---- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ---- Isotope JS ---- -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- ---- Bootstrap JS ---- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- ---- Custom JS ---- -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

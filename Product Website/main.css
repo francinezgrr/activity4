@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Archivo';
+    src: local('Archivo');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Archivo', serif;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: white;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background: var(--pink);
+    color: white;
+    border: var(--pink);
+}
+
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+
+/* <!-- ---- Navbar ---- --> */
+
+.navbar-brand img {
+    width: 250px;
+}
+
+#brand-name {
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+@media(min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+
+/* Carousel */
+
+.carousel-item {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item video,
+.carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#hero {
+    background: url(Images/Carousel\ Banner/2.jpg) top/cover;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: white !important;
+}
+
+
+/* Images */
+
+.product-card {
+    /* Light gray background like your reference */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    max-height: 180px;
+    /* Adjust as needed */
+    object-fit: contain;
+    /* Ensures images are well-fitted */
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-description,
+.product-category {
+    font-size: 12px;
+    color: gray;
+}
+
+.product-link {
+    color: inherit;
+    /* Makes it take the text color from the parent */
+    text-decoration: none;
+    /* Removes underline */
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    /* Custom underline */
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.product-link:hover {
+    color: inherit;
+    /* Keeps the same color on hover */
+    border-bottom: 2px solid #666;
+    /* Slight color change on hover */
+}
+
+
+/* special */
+
+.special-img span {
+    top: 20px;
+    right: 20px;
+}
+
+.special-img:hover img {
+    transform: scale(1.2);
+}
+
+.special-img img {
+    transition: all 0.3s ease;
+}
+
+
+/* Banner */
+
+#banner {
+    background: url(../images/offer_img.jpg) center/cover;
+}
+
+#banner .row {
+    min-height: 60vh;
+}
+
+.banner-content span {
+    font-size: 28px;
+}
+
+.banner-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+
+/* About Us */
+
+.feature-icon {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-text {
+    text-align: center;
+}
+
+.feature-link {
+    color: inherit;
+    /* Makes it take the text color from the parent */
+    text-decoration: none;
+    /* Removes underline */
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    /* Custom underline */
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.feature-link:hover {
+    color: inherit;
+    /* Keeps the same color on hover */
+    border-bottom: 2px solid #666;
+    /* Slight color change on hover */
+}
+
+
+/* subscribe */
+
+.sub-btn:not(.nav-btns button) {
+    background-color: white;
+    color: rgb(0, 0, 0, 0.8);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.8);
+}
+
+.sub-btn:not(.nav-btns button):hover {
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+/* footer */
+
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
